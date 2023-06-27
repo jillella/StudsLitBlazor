@@ -4,12 +4,13 @@
 
 <h1>Studs Lit Components</h1>
 
-<div id="app">
-    <studs-button text="Button" @onclick="IncrementCount"></studs-button>
-    <studs-chip text="Chip" size="medium"></studs-chip>
-</div>
+<studs-chip text="Chip" size="medium"></studs-chip>
+
+<studs-dropdown></studs-dropdown>
+
 
 <p role="status">Current count: @currentCount</p> 
+<studs-button text="Click me" @onclick="IncrementCount"></studs-button>
 
 @code {
     private int currentCount = 0;
