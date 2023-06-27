@@ -16,7 +16,7 @@ npm install --save-dev vite
 Step 4: In the StudsLit directory, create an index.js file and import your 'studs-lit':
 ```
 import 'studs-lit';
-import 'studs-lit/dist/assets/index-db9b21d2.css';
+import 'studs-lit/dist/studs-lit.css';
 ```
 
 Step 5: In the package.json in the StudsLit directory, add a new build script:
@@ -54,9 +54,15 @@ Step 8: Reference the UMD file and the CSS file in your _Host.cshtml (for server
 <head>
     ...
     <link rel="stylesheet" href="js/style.css">
-    <script src="js/clientapp.umd.js"></script>
     ...
 </head>
+
+<body>
+    ...
+    <script src="studs/studslit.umd.js"></script>
+    ...
+</body>
+
 ```
 
 That's it! Now you can manage your JavaScript dependencies separately in the StudsLit directory and use Vite to bundle them.
