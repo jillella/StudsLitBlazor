@@ -1,0 +1,22 @@
+@page "/studslit"
+
+<PageTitle>Studs Lit Components</PageTitle>
+
+<h1>Studs Lit Components</h1>
+
+<div id="app">
+    <studs-button text="Button" @onclick="IncrementCount"></studs-button>
+    <studs-chip text="Chip" size="medium"></studs-chip>
+</div>
+
+<p role="status">Current count: @currentCount</p> 
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+
